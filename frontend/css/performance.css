@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#top-performer,
+#top-products,
+#bottom-performer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#top-performer-table,
+#top-products-table,
+#bottom-performer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;  
+}
+
+#top-performer-table th,
+#top-performer-table td,
+#top-products-table th,
+#top-products-table td,
+#bottom-performer-table th,
+#bottom-performer-table td {
+  padding: 2px 15px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#top-performer {
+  border-left: 5px solid #28a745;
+}
+
+#top-products {
+  border-left: 5px solid #ffc107;
+}
+
+#bottom-performer {
+  border-left: 5px solid #dc3545;
+}

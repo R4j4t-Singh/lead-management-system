@@ -1,0 +1,144 @@
+.title h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #444;
+}
+
+.detailsContainer {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  margin: 20px auto;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.details a {
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.orderDetails ul {
+  margin-top: 20px 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacts {
+  margin-top: 20px;
+}
+
+.contacts h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contacts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calls {
+  margin-top: 20px;
+}
+
+.calls h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.calls ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calls li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#ordersTable,
+#contactsTable,
+#callsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#ordersTable th,
+#ordersTable td,
+#contactsTable th,
+#contactsTable td,
+#callsTable th,
+#callsTable td {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+#ordersTable th,
+#contactsTable th,
+#callsTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+#status {
+  text-align: right;
+  margin-right: 20px;
+}

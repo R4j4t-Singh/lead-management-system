@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/add_lead.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Leads</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="user.html">Account</a>
+    </header>
+    <h1>Add Lead</h1>
+    <form id="lead-form" method="post">
+      <label for="title">Title:</label>
+      <input type="text" name="title" placeholder="Title" required="True" />
+      <label for="restaurantSelect">Restaurant:</label>
+      <select name="restaurantSelect" id="restaurantSelect" required="True">
+        <option value="">Select Restaurant</option>
+      </select>
+      <label for="callFrequency">Set Reminder for call</label>
+      <select name="callFrequency" id="callFrequency" required="True">
+        <option value="">Select Call Frequency</option>
+        <option value="1">1 Day</option>
+        <option value="2">2 Days</option>
+        <option value="3">3 Days</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+        <option value="6">6 Days</option>
+        <option value="7">7 Days</option>
+      </select>
+
+      <label for="assignedToSelect">Assign To:</label>
+      <select name="assignedToSelect" id="assignedToSelect" required="True">
+        <option value="">Select </option>
+      </select>
+
+      <h3>Products :</h3>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price per unit</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>
+              <select name="productSelect" id="productSelect">
+                <option value="">Select product</option>
+              </select>
+            </th>
+            <th>
+              <input
+                type="number"
+                name="qty"
+                placeholder="Quantity"
+                id="quantity"
+              />
+            </th>
+            <th>
+              <input type="text" id="price_per_unit" readonly="True" />
+            </th>
+            <th>
+              <input
+                type="number"
+                name="total_amount"
+                placeholder="0"
+                id="total_amount"
+              />
+            </th>
+            <th>
+              <button type="button" id="addProductBtn">Add</button>
+            </th>
+          </tr>
+          <tr>
+            <th>Total Amount :</th>
+            <th></th>
+            <th></th>
+            <th id="total_value">0</th>
+          </tr>
+        </tfoot>
+        <tbody></tbody>
+      </table>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="../js/add_lead.js"></script>
+  </body>
+</html>

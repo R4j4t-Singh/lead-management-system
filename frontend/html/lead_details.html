@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Details</title>
+    <link rel="stylesheet" href="../css/lead_details.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Leads</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="user.html">Account</a>
+    </header>
+
+    <div class="detailsContainer" id="detailsContainer">
+      <div id="title" class="title">
+        <button id="deleteBtn">Delete</button>
+        <button id="doneBtn">Mark As Done</button>
+        <button id="cancelBtn">Cancel</button>
+        <h3 id="status" class="status"></h3>
+      </div>
+
+      <div id="details" class="details"></div>
+
+      <div id="orderDetails" class="orderDetails">
+        <h2>Order Details</h2>
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Status</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Total Amount :</th>
+              <th></th>
+              <th></th>
+              <th id="total_value">0</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div id="contacts" class="contacts">
+        <h2>Contacts</h2>
+        <table id="contactsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div id="calls" class="calls">
+        <h2>Calls</h2>
+        <table id="callsTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Account</th>
+              <th>Name</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody id="callsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../js/lead_details.js"></script>
+  </body>
+</html>

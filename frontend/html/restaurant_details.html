@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/lead_details.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Leads</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="user.html">Account</a>
+    </header>
+
+    <div class="detailsContainer" id="detailsContainer">
+      <button id="deleteBtn">Delete</button>
+      <div id="title" class="title"></div>
+
+      <div id="details" class="details"></div>
+
+      <div id="contacts" class="contacts">
+        <h2>Contacts</h2>
+        <table id="contactsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody id="contactsTableBody"></tbody>
+          <tfoot>
+            <tr>
+              <th>
+                <input
+                  type="text"
+                  name="Contactname"
+                  placeholder="John Doe"
+                  id="contactName"
+                />
+              </th>
+              <th>
+                <input
+                  type="email"
+                  name="contactEmail"
+                  placeholder="john@mail.com"
+                  id="contactEmail"
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  name="contactPhone"
+                  placeholder="+91564786369"
+                  id="contactPhone"
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  name="contactRole"
+                  placeholder="Manager"
+                  id="contactRole"
+                />
+              </th>
+              <th>
+                <button type="button" id="addContactBtn">Add</button>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <script src="../js/restaurant_details.js"></script>
+  </body>
+</html>

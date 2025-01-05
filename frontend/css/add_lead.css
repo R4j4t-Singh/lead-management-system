@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #444;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+form button,
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#productTable,
+#contactTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#productTable thead,
+#contactTable thead {
+  background-color: white;
+  color: #007bff;
+}
+
+#productTable th,
+#productTable td,
+#contactTable th,
+#contactTable td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
