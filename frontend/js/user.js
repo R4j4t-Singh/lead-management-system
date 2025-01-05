@@ -30,7 +30,7 @@ async function fetchUser() {
         fetchUsers(user.accountID);
       }
     } else {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
   } catch (error) {
     console.error(error);
@@ -65,7 +65,7 @@ fetchUser();
 
 logout.addEventListener("click", () => {
   localStorage.removeItem("uID");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 
 changeAdminBtn.addEventListener("click", async () => {

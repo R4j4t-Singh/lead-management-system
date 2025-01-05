@@ -15,7 +15,7 @@ async function getTopPerformer() {
       }
     );
     if (response.status === 401) {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
     let data = await response.json();
     data.forEach((restaurant) => {

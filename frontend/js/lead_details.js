@@ -27,7 +27,7 @@ async function getLeadDetails(leadID) {
     );
 
     if (response.status == 404) {
-      window.location.href = "index.html";
+      window.location.href = "leads.html";
     }
 
     let lead = await response.json();
@@ -342,7 +342,7 @@ deleteBtn.addEventListener("click", async () => {
         },
       }
     );
-    window.location.href = "index.html";
+    window.location.href = "leads.html";
   } catch (error) {
     console.error(error);
   }

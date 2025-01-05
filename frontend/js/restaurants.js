@@ -15,7 +15,7 @@ async function fetchAndDisplayRestaurants() {
     );
 
     if (response.status === 401) {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
 
     const restaurants = await response.json();

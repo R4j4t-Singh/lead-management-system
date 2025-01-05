@@ -3,29 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <title>Restaurant Leads</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Lead Management System</title>
   </head>
   <body>
-    <header>
-      <a href="index.html">Leads</a>
-      <a href="restaurants.html">Restaurants</a>
-      <a href="user.html">Account</a>
-    </header>
-
-    <h1>Leads</h1>
-    <div id="today-call">
-      <label for="lead-checkbox">Today Calls :</label>
-      <input type="checkbox" id="lead-checkbox" />
+    <div id="login-form">
+      <h1>Lead Management System</h1>
+      <form>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required="true"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required="true"
+        />
+        <input type="submit" value="Login" />
+      </form>
     </div>
 
-    <ul id="leads-container"></ul>
+    <script>
+      const loginForm = document.getElementById("login-form");
+      loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        try {
+          const response = await fetch("http://localhost:3000/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
+          });
 
-    <div id="lead-btn-div">
-      <button id="lead-btn">Add Lead</button>
-    </div>
-
-    <script src="../js/index.js"></script>
+          const data = await response.json();
+          if (data.success) {
+            localStorage.setItem("uID", data.sessionID);
+            window.location.href = "leads.html";
+          } else {
+            alert("Login failed");
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
   </body>
 </html>

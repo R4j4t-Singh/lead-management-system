@@ -13,7 +13,7 @@ async function fetchAndDisplayLeads(todayCall = false) {
     });
 
     if (response.status === 401) {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
 
     let leads = await response.json();

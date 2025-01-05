@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurants</title>
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/restuarant.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Restaurant Leads</title>
   </head>
   <body>
     <header>
@@ -14,14 +14,18 @@
       <a href="user.html">Account</a>
     </header>
 
-    <h1>Restaurant</h1>
-
-    <ul id="restaurant-container"></ul>
-
-    <div id="restaurant-btn-div">
-      <button id="restaurant-btn">Add Restaurant</button>
+    <h1>Leads</h1>
+    <div id="today-call">
+      <label for="lead-checkbox">Today Calls :</label>
+      <input type="checkbox" id="lead-checkbox" />
     </div>
 
-    <script src="../js/restaurants.js"></script>
+    <ul id="leads-container"></ul>
+
+    <div id="lead-btn-div">
+      <button id="lead-btn">Add Lead</button>
+    </div>
+
+    <script src="../js/leads.js"></script>
   </body>
 </html>
